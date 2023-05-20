@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Kanit", Arial, Helvetica, sans-serif;
+}
+
+.ct-nav-item.active {
+  @apply text-[#28353D] dark:text-[#FBFBFB];
+}
+
+.ct-nav-item {
+  @apply uppercase text-[#576974] transition-colors font-normal text-sm mr-6 hover:text-[#28353D];
+}
+
+.ct-btn {
+  @apply px-6 py-3 hover:opacity-90 transition-opacity;
+}
+
+.ct-icon {
+  @apply h-4 w-4 stroke-[#8A9CA7] hover:stroke-[#28353D] dark:stroke-[#A7B5BE] dark:hover:stroke-gray-300;
+}
+
+/* Dark mode */
+#navbar {
+  @apply dark:bg-[#151D20];
+}
+
+#navbar .search-container {
+  @apply dark:bg-[#414F58];
+}
+.ct-nav-item-dark {
+  @apply dark:text-[#A7B5BE] dark:hover:text-[#FBFBFB];
+}
