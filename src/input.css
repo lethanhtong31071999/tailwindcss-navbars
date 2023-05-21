@@ -7,6 +7,10 @@ html {
   font-family: "Kanit", Arial, Helvetica, sans-serif;
 }
 
+.logo {
+  @apply text-3xl text-transparent font-semibold bg-gradient-to-tl from-[#FDD819] to-[#E80050] bg-clip-text hover:opacity-90;
+}
+
 .ct-nav-item.active {
   @apply text-[#28353D] dark:text-[#FBFBFB];
 }
@@ -16,7 +20,7 @@ html {
 }
 
 .ct-btn {
-  @apply px-6 py-3 hover:opacity-90 transition-opacity;
+  @apply px-6 py-3 hover:opacity-90 transition-opacity text-center;
 }
 
 .ct-icon {
